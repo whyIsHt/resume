@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/resume.css">
+	<link rel="stylesheet" href="./progress/css/default.css">
+	<link rel="stylesheet" href="./progress/css/normalize.css">
+	<link rel="stylesheet" href="./progress/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+	<link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/bing.js"></script>
+</head>
+<body>
+	<div class="bg">
+		<div id="myCarousel" class="carousel slide">
+			<!-- 轮播（Carousel）指标 -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>   
+			<!-- 轮播（Carousel）项目 -->
+			<div class="carousel-inner">
+				<div class="item bg1 active">
+					<div class="jumbotron bg1">
+						<h1>This is HTtt!</h1>
+						<p>From Jiangxi, China</p>
+						<p>A thinking agile、strong action</p>
+						<p>20-year-old college student</p>
+						<h2>And</h2>
+						<h2>I will be better</h2>
+					</div>
+				</div>
+				<div class="item bg2">
+					<div class="row">
+						<div class="pie_progress b_html" role="progressbar" data-goal="-50" data-barcolor="#fff" data-barsize="10" aria-valuemax="100">
+							<div class="pie_progress__content">HTML</div>
+						</div>
+						<div class="pie_progress b_css" role="progressbar" data-goal="-50" data-barcolor="#333" data-barsize="10" aria-valuemax="100">
+							<div class="pie_progress__content">CSS</div>
+						</div>
+						<div class="pie_progress b_js" role="progressbar" data-goal="-50" data-barcolor="#8B7160" data-barsize="10" aria-valuemax="100">
+							<div class="pie_progress__content">JS</div>
+						</div>
+						<div class="pie_progress b_vue" role="progressbar" data-goal="-50" data-barcolor="#D3BDA9" data-barsize="10" aria-valuemax="100">
+							<div class="pie_progress__content">VUE</div>
+						</div>
+						<div class="pie_progress b_node" role="progressbar" data-goal="-50" data-barcolor="#B59F4A" data-barsize="10" aria-valuemax="100">
+							<div class="pie_progress__content">NODE</div>
+						</div>
+						<div class="pie_progress b_bootstrap" role="progressbar" data-goal="-50" data-barcolor="#677E8B" data-barsize="10" aria-valuemax="100">
+							<div class="pie_progress__content">BOOTSTRAP</div>
+						</div>
+						<div class="pie_progress b_element-ui" role="progressbar" data-goal="-50" data-barcolor="#42E1BF" data-barsize="10" aria-valuemax="100">
+							<div class="pie_progress__content">ELEMENT-UI</div>
+						</div>
+					</div>
+					<script type="text/javascript" src="progress/js/rainbow.min.js"></script>
+					<script type="text/javascript" src="progress/js/jquery-asPieProgress.min.js"></script>
+					<script type="text/javascript">
+						$(function(){
+							$('.pie_progress').asPieProgress({
+								namespace: 'pie_progress'
+							});
+							setInterval(function(){
+								$('.pie_progress').animate({
+									left:"+=30px",
+									top:"+=20px"
+								},1400).animate({
+									left:"-=50px",
+									top:"+=20px"
+								},2000).animate({
+									left:"+=40px",
+									top:"-=80px"
+								},2500).animate({
+									left:"+=20px",
+									top:"+=30px"
+								},1600).animate({
+									left:"-=40px",
+									top:"+=10px"
+								},1000);
+							},1000);
+						});
+					</script>
+					<div class="jumbotron bg2" style="margin-top: -50px;">
+						<h1>My Skills</h1>
+						<div id="container">
+							<canvas id="chart" width="600" height="500"></canvas>
+							<table id="chartData" style="display: none;">
+								<tr style="color: #fff">
+									<td>HTML</td><td>8</td>
+								</tr>
+								<tr style="color: #333">
+									<td>CSS</td><td>6</td>
+								</tr>
+								<tr style="color: #8B7160">
+									<td>JS</td><td>30</td>
+								</tr>
+								<tr style="color: #D3BDA9">
+									<td>VUE</td><td>16</td>
+								</tr>
+								<tr style="color: #B59F4A">
+									<td>NODE</td><td>20</td>
+								</tr>
+								<tr style="color: #677E8B">
+									<td>BOOTSTRAP</td><td>12</td>
+								</tr>
+								<tr style="color: #42E1BF">
+									<td>ELEMENT-UI</td><td>8</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+
+				</div>
+				<div class="item bg3">
+					<div class="jumbotron bg3">
+						<div class="demo">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="navbar">
+											<p>Contact me</p>
+											<ul class="menu">
+												<li><a href="javascript:void(1);" data-clipboard-text="1104672757" class="fa fa-qq"></a></li>
+												<li><a href="javascript:void(0);" data-clipboard-text="none" class="fa fa-steam-square"></a></li>
+												<li><a href="javascript:void(0);" data-clipboard-text="whyht0802" class="fa fa-wechat"></a></li>
+												<li><a href="javascript:void(0);" data-clipboard-text="none" class="fa fa-twitter"></a></li>
+												<li><a href="javascript:void(0);" data-clipboard-text="************" class="fa fa-phone"></a></li>
+												<li><a href="javascript:void(0);" data-clipboard-text="none" class="fa fa-instagram"></a></li>
+												<li><a href="javascript:void(0);" data-clipboard-text="none" class="fa fa-skype"></a></li>
+												<li><a href="javascript:void(0);" data-clipboard-text="谁偷了我的玫瑰i" class="fa fa-weibo"></a></li>
+												<li><a href="javascript:void(0);" data-clipboard-text="none" class="fa fa-github"></a></li>
+											</ul>
+											<script src="./js/clipboard.min.js"></script>
+											<script type="text/javascript">
+												var clipboard = new Clipboard('.fa');
+												clipboard.on('success', function(e) {
+													confirm('已复制到剪贴板');
+													e.clearSelection();
+												});
+											</script>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/jquery.mousewheel.js"></script>
+	<script type="text/javascript">
+		$('#myCarousel').mousewheel(function(event, delta, deltaX, deltaY) {
+			if(delta == 1){
+				$("#myCarousel").carousel('prev');
+			}else{
+				$("#myCarousel").carousel('next');
+			}
+		});
+	</script>
+</body>
+</html>
